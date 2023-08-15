@@ -16,16 +16,16 @@ preferred_number_of_private_subnets = "4"
 
 environment = "production"
 
-ami = "ami-0b0af3577fe5e3532"
+ami = "ami-06640050dc3f556bb"
 
-keypair = "devops"
+keypair = "Darey-AWS"
 
 # Ensure to change this to your acccount number
 account_no = "571207880192"
 
-db-username = "jendyjasper"
+master-username = "jendyjasper"
 
-db-password = "devopspbl"
+master-password = "devopspbl"
 tags = {
   Enviroment      = "production" 
   Owner-Email     = "jendydevops@gmail.com"

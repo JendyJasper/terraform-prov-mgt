@@ -53,15 +53,6 @@ resource "aws_lb_listener" "nginx-listner" {
   }
 }
 
-# Add the following outputs to output.tf to print them on screen
-output "alb_dns_name" {
-  value = aws_lb.ext-alb.dns_name
-}
-
-output "alb_target_group_arn" {
-  value = aws_lb_target_group.nginx-tgt.arn
-}
-
 # create an internal application load balancer
 # ----------------------------
 #Internal Load Balancers for webservers
