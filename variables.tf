@@ -17,3 +17,18 @@ variable "enable_dns_hostnames" {
   variable "preferred_number_of_public_subnets" {
       default = 2
 }
+
+  variable "preferred_number_of_private_subnets" {
+      default = 4
+}
+
+variable "tags" {
+  description = "A mapping of tags to assign to all resources."
+  type        = map(string)
+  default     = {}
+}
+
+variable "name" {
+  description = "vpc name."
+  default     = "aws vpc"
+}
