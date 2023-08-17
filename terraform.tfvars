@@ -23,7 +23,7 @@ master-username = "jendyjasper"
 
 master-password = "devopspbl"
 tags = {
-  Enviroment      = "production" 
+  Enviroment      = "production"
   Owner-Email     = "jendydevops@gmail.com"
   Managed-By      = "Terraform"
   Billing-Account = "571207880192"

@@ -1,6 +1,6 @@
 resource "aws_eip" "nat_eip" {
   depends_on = [aws_internet_gateway.ig]
-  vpc = true
+  vpc        = true
   tags = merge(
     var.tags,
     {

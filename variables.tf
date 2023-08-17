@@ -1,25 +1,25 @@
 variable "region" {
-      default = "us-east-1"
+  default = "us-east-1"
 }
 
 variable "vpc_cidr" {
-    default = "172.16.0.0/16"
+  default = "172.16.0.0/16"
 }
 
 variable "enable_dns_support" {
-    default = "true"
+  default = "true"
 }
 
 variable "enable_dns_hostnames" {
-    default ="true" 
+  default = "true"
 }
 
-  variable "preferred_number_of_public_subnets" {
-      default = 2
+variable "preferred_number_of_public_subnets" {
+  default = 2
 }
 
-  variable "preferred_number_of_private_subnets" {
-      default = 4
+variable "preferred_number_of_private_subnets" {
+  default = 4
 }
 
 variable "tags" {
@@ -28,9 +28,15 @@ variable "tags" {
   default     = {}
 }
 
+# variable "name" {
+#   description = "vpc name."
+#   default     = "aws vpc"
+# }
+
 variable "name" {
-  description = "vpc name."
-  default     = "aws vpc"
+  type    = string
+  default = "ACS"
+
 }
 
 variable "ami" {
