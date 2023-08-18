@@ -3,7 +3,7 @@
 #########################
 
 resource "aws_s3_bucket" "terraform-state" {
-  bucket = "darey-pbl18"
+  bucket        = "darey-pbl18"
   force_destroy = true
 }
 resource "aws_s3_bucket_versioning" "version" {
